@@ -5,45 +5,50 @@
     <title></title>
     <meta charset="UTF-8">
     <style>
-        body,
-        html {
-            padding: 0;
-            margin: 0;
-        }
-
-        #container {
-            max-width: 1280px;
-            width: 100%;
-            height: 720px;
-            position: relative;
-            /* background-image: url('assets/thumbnail.png'); */
-            background-position: center center;
-            background-repeat: no-repeat;
-        }
-
-        #interactive-area {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 10;
-            width: 1280px;
-            height: 720px;
-            display: flex;
-        }
-
-        #video-area {
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            height: 100%;
-            margin-top: 10px;
-        }
-
-        #video>video {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
+body,html {
+        padding: 0;
+        margin:0;
+      }
+      #container {
+        max-width:800px;
+        width:100%;
+        height:235px;
+        position: relative;
+        background-image:url('assets/Livspace_Spotify_FINAL-bg.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      #interactive-area {
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        width: 800px;
+        height: 235px;
+        display:flex;
+      }
+      #video-area {
+        position: relative;
+        overflow: hidden;
+        width:100%;
+        height: 100%;
+        margin-top: 10px;
+      }
+      #video>video {
+        width:100%;
+        height:100%;
+        border:none;
+      }
+      #click-area-video {
+        display:block;
+        position: absolute;
+        z-index:999;
+        width: 800px;
+        height:190px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 10px;
+      }
     </style>
     <script src="https://cdn.plyr.io/3.6.7/plyr.polyfilled.js"></script>
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.7/plyr.css" />
