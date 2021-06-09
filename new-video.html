@@ -43,6 +43,16 @@
       height: 100%;
       border: none;
     }
+
+    #click-area-video {
+      display: block;
+      position: absolute;
+      z-index: 999;
+      margin-left: 200px;
+      margin-top: 50px;
+      width: 260px;
+      height: 110px;
+    }
   </style>
   <script src="https://cdn.plyr.io/3.6.7/plyr.polyfilled.js"></script>
 
@@ -51,9 +61,12 @@
 
 <body>
   <div id="container">
+    <a id="click-area-video"
+      href="https://open.spotify.com/album/6AU3ksUOPYTGxYSDDVAHtH?highlight=spotify:track:32sMucRnZPafSyRTjPinJV"
+      target="_blank"></a>
     <div id="interactive-area">
       <div id="video-area">
-        <video id="video" playsinline controls autoplay>
+        <video id="video" playsinline controls autoplay muted>
           <source src="assets/AFTERGLOW_Garuda Select_30sec_1.webm" type="video/ogg">
         </video>
       </div>
@@ -62,7 +75,7 @@
 </body>
 <script>
   const player = new Plyr('video', {
-    controls: ['restart', 'volume', 'mute'],
+    controls: ['Track', 'restart', 'volume', 'mute'],
     hideControls: false
   });
 </script>
